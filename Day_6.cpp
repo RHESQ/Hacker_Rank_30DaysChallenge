@@ -24,10 +24,10 @@ int main() {
         string oddChr = "";
 
         for (int k = 0; k < N; k++)
-             if (k % 2 == 0) {
-                evenChr += S[k];
-             } else {
+             if (k % 2 != 0) {
                 oddChr += S[k];
+             } else {
+                evenChr += S[k];
              }
 
         cout << "Characters at the even index: " << evenChr << endl << "Characters at the even index: "<< oddChr << endl << endl;
